@@ -22,4 +22,14 @@ class AjaySchool(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+
+class New_changes(models.Model):
+    name = models.CharField(max_length=100)
+    published_year = models.IntegerField()
+
+    def __str__(self):
+        return self.title
+
 
