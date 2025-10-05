@@ -9,6 +9,7 @@ class BookViewSet(mixins.ListModelMixin,
                   mixins.DestroyModelMixin,
                   viewsets.GenericViewSet):
     queryset = Book.objects.all()
+    print("queryset",queryset)
     serializer_class = BookSerializer
 
 
